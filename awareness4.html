@@ -1,26 +1,41 @@
 
-<?php include('templates/header.php'); ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- adding recaptcha v2 API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</head>
+
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1"><a href="index.php">Home</a></span>
+    </div>
+</nav>
+<body class="bg-light">
 <head>
     <meta charset="UTF-8">
     <title>Phishing Trainer</title>
 </head>
-<body>
+
 <div class="container text-center">
 <header>
-    <h1>Phishing Trainer - Social Indicators</h1>
+    <h1>Phishing Trainer - Technical Indicators</h1>
 </header>
 <main>
         <div class="container text-center">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
                 <div class="card">
-                    <img src="images/communication1.jpg" class="card-img-top" alt="...">
+                    <img src="images/Technical1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">1 Social Indicators?</h5>
+                        <h5 class="card-title">1 Technical Indicators?</h5>
                         <p class="card-text">Every day you check your emails for messages from work, entertainment, friends,
                             shopping, and more. There are tools to keep your emails safe, but it’s ultimately up to you what emails you respond to. <br><br>
 
@@ -35,9 +50,9 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="images/Fear1.PNG" class="card-img-top" alt="...">
+                    <img src="images/URLs1.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">2 Fear</h5>
+                        <h5 class="card-title">2 Bad URL</h5>
                         <p class="card-text">Most emails you read, respond, or follow their instructions to connect with friends, confirm shopping orders, or check your accounts. When you receive a Phishing email,
                             it’s important to be able to detect it and avoid interacting with the email. The best response if you think an email is suspicious is to examine it for ‘indicators of phishing’ to confirm
                             it’s not a real email and report it to your organization or email provider. <br> <br>
@@ -53,9 +68,9 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="images/Curiosity1.PNG" class="card-img-top" alt="...">
+                    <img src="images/Emails1.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">3 Curiosity and Greed</h5>
+                        <h5 class="card-title">3 Sender Address and Domain</h5>
                         <p class="card-text">This training looks to change your ‘Heuristics’, also known as your email habits. This just
                             means changing your subconscious decision-making when you look
                             at an email and simply “know” whether it’s real or fake. Once you decide an email feels wrong, then you look at
@@ -70,9 +85,9 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="images/Empathy1.jpg" class="card-img-top" alt="...">
+                    <img src="images/Warnings1.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">4 Empathy</h5>
+                        <h5 class="card-title">4 Security Warnings</h5>
                         <p class="card-text">Contextual indicators include...</p>
                     </div>
                 </div>
@@ -85,7 +100,7 @@
 
         <div class="row align-items-center">
             <div class="col">
-                <img src="images/Greed1.PNG" alt="Placeholder Image">
+                <img src="images/TechnicalIndicators.png" alt="Placeholder Image">
             </div>
             <div class="col">
                 By asking the five context questions, we can see if this email is a Phishing attack, or a real alert from eBay. <br><br>
@@ -112,8 +127,8 @@
     </div>
 
     <br><br>
-    <button type="button" class="btn btn-primary brn-lg" onclick="window.location.href='awareness2.php'">Back</button>
-    <button type="button" class="btn btn-primary brn-lg" onclick="window.location.href='awareness4.php'">Continue</button>
+    <button type="button" class="btn btn-primary brn-lg" onclick="window.location.href='awareness3.php'">Back</button>
+    <button type="button" class="btn btn-primary brn-lg" onclick="window.location.href='awareness5.php'">Continue</button>
     <br><br>
 
 </main>
