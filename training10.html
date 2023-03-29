@@ -75,16 +75,17 @@
             var trainingInfo = document.querySelector('.training-info');
             var message = '';
             if (isFake) {
-                message = 'Incorrect, this email is a real message.<br>';
+                message = 'Correct, this is a phishing email.<br>';
             } else {
-                message = 'Correct, this email is a real message.<br>';
+                message = 'Incorrect, this email is not legitimate.<br>';
             }
 
             message = message +
-                'Here are some indicators that it was real:<br>-' +
-                'The sender\'s email address uses the correct glos.ac.uk domain.<br>-' +
-                'The URL linked matches the glos.ac.uk domain.<br>- ' +
-                'While it does cause curiosity, it is from a trusted sender and no cause for alarm. ';
+                'Here are some indicators that it was a phishing email:<br>-' +
+                'The email lacks a personal greeting, just calling us User.<br>-' +
+                'The contents of the email is offering a valuable prize of CV feedback, which might even cause some fear if the email is unexpected, who might be reading your CV?<br>-' +
+                'The sender\'s email address is not good, with an odd domain name of @feed-back, when the rest of the email claims to be from TopCV a known organisation.<br>-' +
+                'The URL is also not entirely trustworthy, with dots and dashes used to break up the website name, it could be pretending to be TopCV.<br>';
 
             trainingInfo.innerHTML = '<p>' + message + '</p>';
             trainingInfo.style.display = 'block';
@@ -97,11 +98,11 @@
 <body class="bg-light">
 <header>
     <div class="container centre-text">
-    <h1>Phishing Trainer - Practice Q1</h1>
+    <h1>Phishing Trainer - Practice Q10</h1>
 </header>
 <main>
     <div class="container">
-        <img src="images/Embedded/Training1.png" alt="Placeholder Image">
+        <img src="images/Embedded/Training10.png" alt="Placeholder Image">
         <form action="" method="post" onsubmit="showTrainingInfo(document.querySelector('input[name=verification]:checked').value == 'fake'); return false;">
             <fieldset>
                 <legend>Is this email legitimate or a phishing attack?</legend>
@@ -120,7 +121,7 @@
             <p></p>
         </div>
         <br><br>
-        <button id="continue-button" style="display: none" type="button" class="btn btn-primary brn-lg" onclick="window.location.href='training2.html'">Continue</button>
+        <button id="continue-button" style="display: none" type="button" class="btn btn-primary brn-lg" onclick="window.location.href='index.html'">Finish and go to Test 2</button>
         <br><br>
     </div>
 </main>

@@ -6,11 +6,8 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <!-- adding recaptcha v2 API -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
 </head>
+
 
 
 <nav class="navbar bg-body-tertiary">
@@ -18,12 +15,11 @@
         <span class="navbar-brand mb-0 h1"><a href="index.html">Home</a></span>
     </div>
 </nav>
-<body class="bg-light">
 <head>
     <meta charset="UTF-8">
     <title>Phishing Trainer</title>
 </head>
-
+<body class="bg-light">
 <div class="container text-center">
 <header>
     <h1>Phishing Trainer - Technical Indicators</h1>
@@ -35,14 +31,17 @@
                 <div class="card">
                     <img src="images/Technical1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">1 Technical Indicators?</h5>
-                        <p class="card-text">Every day you check your emails for messages from work, entertainment, friends,
-                            shopping, and more. There are tools to keep your emails safe, but it’s ultimately up to you what emails you respond to. <br><br>
+                        <h5 class="card-title">1 Technical Indicators</h5>
+                        <p class="card-text">Technical indicators are the hardest to spot, even IT professionals find it difficult,
+                            but there are some common tricks in use that can let you know the email is an attempt to trick you. It
+                            often comes down to two main pieces of information, the sender address of the email, and the link it
+                            provides for you to connect to through your browser. If either of these are incorrect according to their
+                            supposed source e.g. amazon, eBay, government entities, there’s a very good chance the email is fake and attempting to trick you.<br> <br>
 
-                            You’ve likely heard of ‘Phishing’ attacks before, this is where an email is sent to you pretending to be real but wants you to ‘click’ on a link,
-                            website, or file attachment, that would harm your device. A Phishing attack can harm your device by installing malicious software or convinces you to go to a
-                            ‘fake website’ where you would input your login details, stealing those details and the account.
-
+                            If there’s no link, there will often be a file attachment or some form of contact information for you to follow up on.
+                            It’s important not to interact with the attachment, as they often come with forms of malicious software called ‘malware’
+                            that can harm your device. Following up and replying to the email may also cause trouble, as now this attacker knows
+                            you may be vulnerable to further attacks.
 
                         </p>
                     </div>
@@ -53,16 +52,31 @@
                     <img src="images/URLs1.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">2 Bad URL</h5>
-                        <p class="card-text">Most emails you read, respond, or follow their instructions to connect with friends, confirm shopping orders, or check your accounts. When you receive a Phishing email,
-                            it’s important to be able to detect it and avoid interacting with the email. The best response if you think an email is suspicious is to examine it for ‘indicators of phishing’ to confirm
-                            it’s not a real email and report it to your organization or email provider. <br> <br>
+                        <p class="card-text">A phishing email will almost always contain a ‘URL’ or ‘link’ to a website or download,
+                            it’s their goal to make you click this link in order to attack your device. If we examine the email’s
+                            link by hovering our mouse over it and seeing the URL in the bottom left of the screen, we can gain
+                            insight into where it might be taking us. Generally, a phishing email will pretend to be a known brand,
+                            organization, or person, but they can never attack you with the real website of that brand, therefore
+                            the attacker must make some kind of copy. The URL leading you to the copy cannot be the same as the real
+                            website, which means by reading the URL and noticing any differences or errors we can prove the email to be fake.<br><br>
+
+                            This part is hard to absorb because URLs can be complicated, but the following features may indicate a malicious link.<br>
+
+                            - numbers and random characters in the link.<br>
+
+                            - Spelling mistakes in the URL, which may be intentional. E.g, eBay.com is real, but 3Bay.com is not.<br>
+
+                            - use of dots and dashes within the name. E.g. Amazon.com is real, but amazon-services.com is not.<br>
+
+                            - a bundle of numbers called an IP address without any name at all to read.<br><br>
 
 
 
-                            It’s worth knowing that most emails you receive will be legitimate, and it’s important not to assume they’ll all be attacks,
-                            or you’ll never get on with your day and get ‘security fatigue’. Just keep your eyes open and know that some people will try to trick you with fake emails. <br><br>
-
-                            Whenever you see the easy to spot indicators the next part will teach you, you can stop and examine the email fully to check and feel safe. </p>
+                            The URL of the email also be ‘obfuscated’ in which the link is not readable at all, only a
+                            small jumble of characters hiding the actual destination. An email may also ‘hide’ the fake
+                            URL under a real one, with the text claiming to bring you to facebook.com, but taking you to
+                            hackerwebsite.org instead. It’s important to always hover the link before clicking to make sure
+                            you’re going to a trusted site.
                     </div>
                 </div>
             </div>
@@ -71,14 +85,21 @@
                     <img src="images/Emails1.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">3 Sender Address and Domain</h5>
-                        <p class="card-text">This training looks to change your ‘Heuristics’, also known as your email habits. This just
-                            means changing your subconscious decision-making when you look
-                            at an email and simply “know” whether it’s real or fake. Once you decide an email feels wrong, then you look at
-                            it ‘systematically’ where you investigate further for the indicators of attack. <br><br>
+                        <p class="card-text">Like URLs, the Sender of an email can prove an email is fake or real.
+                            A sender ‘address’ and ‘domain’, generally, cannot be faked, so must look like but cannot
+                            be the same as the ‘real’ domain it claims to come from. The ‘domain’ is the part of
+                            the address after the @, which signifies what network it came from, and is the most
+                            important part, as the address before the @ can be anything, if the total address is
+                            unique. For example, a phishing attack may claim to be from amazon, but the sender
+                            address is something like ‘amazon@amazon-services.com. Note that the start of the
+                            address can say amazon, but that the domain cannot be the same, and needs to use
+                            similar tricks as a URL by adding a dash for its own custom and fake domain name.<br><br>
 
-                            There are 3 categories of indicators you should know.<br><br>
+                            These URLs are one of the key indicators that can prove if an email is a phishing
+                            attack or a real communication. A trusted URL will be short and recognizable,
+                            with no spelling mistakes and a simple domain. E.g. “news@amazon.com”.<br><br>
 
-                            Contextual, Social, and Technical.
+                            The @amazon.com part cannot easily be copied.
                         </p>
                     </div>
                 </div>
@@ -88,7 +109,12 @@
                     <img src="images/Warnings1.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">4 Security Warnings</h5>
-                        <p class="card-text">Contextual indicators include...</p>
+                        <p class="card-text">Whatever email application you use, there will generally be advice and tools available.
+                            If an email comes through that your provider thinks is suspicious, it will let you know with warning
+                            symbols and may even block it automatically into your ‘junk’ folder. These emails are important
+                            to keep in mind when dealing with suspicious emails, as they’ll sometimes be your first clue something is off.<br><br>
+
+                            These warnings can include information like the email coming from outside your work’s network, that is has suspicious content, or even that malicious content was detected. </p>
                     </div>
                 </div>
             </div>
@@ -103,24 +129,17 @@
                 <img src="images/TechnicalIndicators.png" alt="Placeholder Image">
             </div>
             <div class="col">
-                By asking the five context questions, we can see if this email is a Phishing attack, or a real alert from eBay. <br><br>
+                With our technical indicators, we can now really confirm if an email is a phishing attack or legitimate. <br><br>
 
 
-                1. Did I expect this email? <br>
-                I do not use eBay, so this is an unexpected email, and may be fake. <br><br>
+                1. The sender address. <br>
+                This sender address could be real, but the use of the dash in 'e-gress' could be an attempt to fake the domain. <br><br>
 
-                2. Is the email trying to grab my attention? <br>
-                The subject line uses an ! to try to grab my attention, when a legitimate email would normally be more formal. <br><br>
+                2. The URL is obfuscated <br>
+                While a safe looking link is presented in the email, when hovered it actually leads to a different URL entirely, a common tactic to hide malicious links. <br><br>
 
-                3. Do I recognize the sender? <br>
-                I do not recognize the sender email address, this is the first time I've gotten a message from them, so there is no established trust. <br><br>
-
-                4. Does the email know me?<br>
-                The email is using a generic greeting, rather than any of my personal details. Real business emails would usually know my name and use it to appear legitimate. <br><br>
-
-                5. Is the email trying to pressure me into a decision? <br>
-                The email content states I will lose access to my eBay account if I don't comply. This pressures me to follow the link or risk losing something, a common phishing tactic. <br><br>
-
+                3. The URL <br>
+                The URL is different to the text in the email, instead taking us to 'accounts-egress.com'. This uses a dash to make the URL unique, but similar to the original website, but we now know it's a fake.. <br><br>
 
             </div>
         </div>
